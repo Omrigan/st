@@ -74,7 +74,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "xterm";
 
 /*
  * spaces per tab
@@ -178,8 +178,8 @@ static MouseShortcut mshortcuts[] = {
     {ShiftMask, Button5, ttysend, {.s = "\033[6;2~"}},
     /* {XK_ANY_MOD, Button4, ttysend, {.s = "\031"}}, */
     /* {XK_ANY_MOD, Button5, ttysend, {.s = "\005"}}, */
-    {XK_ANY_MOD, Button4, kscrollup, {.i = 1}, 0, /* !alt */ -1},
-    {XK_ANY_MOD, Button5, kscrolldown, {.i = 1}, 0, /* !alt */ -1},
+    {XK_ANY_MOD, Button4, kscrollup, {.i = 5}, 0, /* !alt */ -1},
+    {XK_ANY_MOD, Button5, kscrolldown, {.i = 5}, 0, /* !alt */ -1},
 };
 
 /* Internal keyboard shortcuts. */
